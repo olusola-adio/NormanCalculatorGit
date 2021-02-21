@@ -32,7 +32,7 @@ namespace NormanCalculator.Controllers
             {
                 await Task.Run(() => responseObject.Result = exception.Message);
                 _logger.LogError(exception.StackTrace);
-                _logger.LogError("Silly Crap info sent through {0} and {1}", input1, input2);
+                _logger.LogError("Crap info sent through {0} and {1}", input1, input2);
             }
             return responseObject;
         }
