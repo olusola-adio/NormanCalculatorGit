@@ -20,7 +20,7 @@ resources:
 variables:
 
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '084cd5e4-e3fc-4eb3-84cb-88f1fa5f07be'
+  dockerRegistryServiceConnection: 'DockerConnectionGitHub'
   imageRepository: 'normancalculator'
   containerRegistry: 'acrnormankubernetes.azurecr.io'
   dockerfilePath: '**/Dockerfile'
