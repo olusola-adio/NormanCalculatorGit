@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: normancalculator 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: normancalculator
+  template:
+    metadata:
+      labels:
+        app: normancalculator 
+    spec:
+      containers:
+        - name: normancalculator 
+          image: acrnormankubernetes.azurecr.io/normancalculator
+          ports:
+          - containerPort: 80

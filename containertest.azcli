@@ -1,0 +1,9 @@
+az login 
+
+az account set --subscription f3b14109-a3de-4f54-9f58-46d891380a7e
+
+az acr build --image "normancalculator:v1" \
+    --registry acrNormanKubernetes \
+    --file Dockerfile . 
+
+  
